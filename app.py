@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 import requests
 import os
+import time
 
 app = Flask(__name__)
 app.secret_key = 'supersecretkey'  # Replace for production
@@ -99,3 +100,10 @@ def logout():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+@app.route('/api/slow-endpoint')
+def slow_endpoint():
+    time.sleep(5)
+    return "This was a slow response after 5 seconds"
+
