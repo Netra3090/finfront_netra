@@ -83,7 +83,7 @@ steps:
 
 - task: AzureCLI@2
   inputs:
-    azureSubscription: 'Azure subscription 1'        # <-- Name of your service connection
+    azureSubscription: 'Training-Student-016-OC012'        # <-- Name of your service connection
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
