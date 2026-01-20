@@ -83,7 +83,7 @@ steps:
 
 - task: AzureCLI@2
   inputs:
-    azureSubscription: 'AzureDevopsConnection'        # <-- Name of your service connection
+    azureSubscription: 'Azure subscription 1'        # <-- Name of your service connection
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
